@@ -1,0 +1,6 @@
+roslaunch cpr_office_gazebo office_world_with_plugin.launch
+roslaunch jackal_navigation amcl_demo.launch map_file:=/home/ww/jackal_ws/src/cpr_gazebo/maps/mymap.yaml
+roslaunch mocap_rover mocap_bridge_gazebo.launch
+roslaunch static_collision_avoidance static_collision_avoidance.launch
+roslaunch jackal_viz view_robot.launch config:=localization
+rosrun test_mpc move_mpc
